@@ -6,6 +6,7 @@
     <link rel="icon" href="images/favik.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="styles/origin.css"/>
     <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <title>Гид архитектор</title>
 </head>
 <body>
@@ -17,7 +18,21 @@
         <a href="#" class="help-btn">Техническая поддержка</a>
     </header>
     <main>
-        
+        <p>Узнайте интересную историю, год создания, имя и фамилию архитектора, краткую историческую справку о здании!</p>
+        <p>Сфотографируйте и загрузите изображение здания или введите его адрес</p>
+        <div class="container-button">
+            <input type="radio" name="typeSearch" id="photoSearch" checked/>
+            <label for="photoSearch">
+                <span>Загрузить изображение</span>
+            </label>
+            <input type="radio" name="typeSearch" id="textSearch" />
+            <label for="textSearch">
+                <span>Ввести адрес</span>
+            </label>
+        </div>
+        <form class="photoForm">
+            
+        </form>
     </main>
 </body>
 </html>
