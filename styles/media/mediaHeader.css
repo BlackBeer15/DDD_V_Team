@@ -78,3 +78,33 @@
     	overflow: hidden;
   	}
 }
+
+@media (max-width: 520px) {
+    .logo p {
+        font-size: 30px;
+    }
+
+    .photoForm label span {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 440px) {
+    .logo p {
+        font-size: 25px;
+    }
+
+    .photoForm label span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .logo p {
+        font-size: 20px;
+    }
+
+    .photoForm label span {
+        font-size: 18px;
+    }
+}

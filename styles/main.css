@@ -18,12 +18,12 @@ main > p {
     font-size: 25px;
 }
 
-main > p:first-child{
+.first-row {
     max-width: 850px;
     font-size: 25px;
 }
 
-main > p:nth-child(2){
+.second-row{
     max-width: 900px;
     font-size: 25px;
     margin-top: 25px;
@@ -76,7 +76,7 @@ label span {
     width: 100%;
     height: 400px;
     margin-top: 25px;
-    display: none;
+    display: block;
 }
 
 .photoTower {
@@ -97,6 +97,7 @@ label span {
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .photoForm label span {
@@ -147,9 +148,11 @@ label span {
 }
 
 .addressForm {
+    display: none;
     position: relative;
     width: 100%;
     height: 400px;
     margin-top: 25px;
-    display: none;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
 }
