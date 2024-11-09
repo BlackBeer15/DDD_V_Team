@@ -8,20 +8,36 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/media/mediaHeader.css" />
+    <link rel="stylesheet" href="styles/media/mediaMain.css" />
     <title>Гид архитектор</title>
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo">
-            <img src="images/logo.png" alt="Логотип" />
-            <p>Гид-архитектор</p>
-        </a>
-        <nav>
-            <a href="#">Техническая поддержка</a>
-            <a href="#" class="help-btn">Личный кабинет</a>
-        </nav>
+        <div class="container">
+            <div class="navbar__wrap">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Логотип">
+                    <p>Гид-архитектор</p>
+                </a>		
+                <nav class="menu" id="menu">
+                    <a href="#">Техническая поддержка</a>
+                    <a href="#" class="profile">
+                        <img src="images/profile.png" alt="Личный кабинет">
+                    </a>
+                </nav>
+                <div class="hamb">
+                    <div class="hamb__field" id="hamb">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup"></div>	
     </header>
     <main>
+        <img src="images/romb.png" class="romb"/>
         <p>Узнайте интересную историю, год создания, имя и фамилию архитектора, краткую историческую справку о здании!</p>
         <p>Сфотографируйте и загрузите изображение здания или введите его адрес</p>
         <div class="container-button">
@@ -37,14 +53,20 @@
         <form class="photoForm">
             <input  type="file" accept=".jpg, .jpeg, .png" name="photoTower" class="photoTower" />
             <label for="photoTower">
-                <span class="inp-text">Выберите файл</span>
-                <p class="inp-text">Загрузить изображение</p>
+                <img class="inp-text" src="images/load.png" />
+                <span class="inp-text">Загрузите изображение</span>
+                <p class="inp-text">Jpg, png</p>
                 <img id="photog" src="#" alt="your image" />
             </label>
             <input type="submit" class="send-btn" value="Получить информацию" />
         </form>
+        <form class="addressForm">
+            
+        </form>
     </main>
 </body>
 <script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/header.js"></script>
 <script src="js/preloadImage.js"></script>
+<script src="js/takeVariant.js"></script>
 </html>

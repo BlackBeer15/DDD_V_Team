@@ -1,53 +1,71 @@
 header {
-    width: 100%;
+	width: 100%;
+    height: 80px;
+    background-color: #fff;
     box-sizing: border-box;
     padding: 0 50px;
-    height: 100px;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.container {
+  	width: 100%;
+  	margin: 0 auto;
+  	height: 100%;
+}
+
+.navbar__wrap {
+  	display: flex;
+  	justify-content: space-between;
+  	height: 100%;
+}
+
+.hamb {
+  display: none;
+}
+
+.popup {
+  display: none;
+  overflow: auto;
 }
 
 .logo {
-    display: flex;
-    height: 100%;
-    justify-content: space-around;
+	display: flex;
+    justify-content: space-between;
     align-items: center;
     text-decoration: none;
+}
+
+.logo img {
+	height: 80%;
+	width: auto;
 }
 
 .logo p {
-    color: #163558;
     font-size: 40px;
+    color: #163558;
+    margin-left: 10px;
     font-weight: 700;
-    margin-left: 25px;
 }
 
-header .logo img {
-    height: 95%;
-    width: auto;
+.menu {
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+    height: 100%;
 }
 
-header nav {
+.menu a {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-header nav a {
     color: #000;
-    text-decoration: none;
+    
+    height: 80px;
 }
 
-.help-btn {
-    width: 250px;
-    height: 50px;
-    border-radius: 10px;
-    background: linear-gradient(142deg, rgba(0,165,152,1) 0%, rgba(55,169,232,1) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+.profile {
     margin-left: 50px;
+}
+
+.profile img {
+    height: 60%;
+    width: auto;
 }

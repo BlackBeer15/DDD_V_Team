@@ -1,0 +1,21 @@
+@media (max-width: 600px) {
+    .container-button {
+        flex-direction: column;
+        height: 120px;
+    }
+
+    label[for="textSearch"] {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .btn-label {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1175px) {
+    .romb {
+        opacity: 0.2;
+    }
+}
