@@ -1,0 +1,9 @@
+@media (max-width: 760px) {
+    .logo p {
+        font-size: 25px;
+    }
+
+    .help-btn {
+        width: 200px;
+    }
+}

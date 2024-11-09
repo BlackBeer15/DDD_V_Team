@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/origin.css"/>
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/media/mediaHeader.css" />
     <title>Гид архитектор</title>
 </head>
 <body>
@@ -15,7 +16,10 @@
             <img src="images/logo.png" alt="Логотип" />
             <p>Гид-архитектор</p>
         </a>
-        <a href="#" class="help-btn">Техническая поддержка</a>
+        <nav>
+            <a href="#">Техническая поддержка</a>
+            <a href="#" class="help-btn">Личный кабинет</a>
+        </nav>
     </header>
     <main>
         <p>Узнайте интересную историю, год создания, имя и фамилию архитектора, краткую историческую справку о здании!</p>
@@ -33,11 +37,14 @@
         <form class="photoForm">
             <input  type="file" accept=".jpg, .jpeg, .png" name="photoTower" class="photoTower" />
             <label for="photoTower">
-                <span>Выберите файл</span>
-                <p>Загрузить изображение</p>
+                <span class="inp-text">Выберите файл</span>
+                <p class="inp-text">Загрузить изображение</p>
+                <img id="photog" src="#" alt="your image" />
             </label>
-            <input type="submit" class="send-btn" value="Получить информацию"/>
+            <input type="submit" class="send-btn" value="Получить информацию" />
         </form>
     </main>
 </body>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/preloadImage.js"></script>
 </html>

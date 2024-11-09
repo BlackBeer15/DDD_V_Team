@@ -89,10 +89,6 @@ label span {
     border-radius: 10px;
 }
 
-.photoForm label:hover {
-    background-color: #9c9c9c;
-}
-
 .photoForm label span {
     font-size: 32px;
     font-weight: 300;
@@ -119,6 +115,17 @@ label span {
     font-size: 27px;
 }
 
-input [type="submit"] {
+.send-btn {
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    box-shadow: -2px 2px 20px -8px #010101;
+}
+
+#photog {
+    display: none;
+    height: 80%;
+    width: auto;
 }
