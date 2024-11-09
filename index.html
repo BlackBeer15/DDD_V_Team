@@ -22,16 +22,21 @@
         <p>Сфотографируйте и загрузите изображение здания или введите его адрес</p>
         <div class="container-button">
             <input type="radio" name="typeSearch" id="photoSearch" checked/>
-            <label for="photoSearch">
+            <label class="btn-label" for="photoSearch">
                 <span>Загрузить изображение</span>
             </label>
             <input type="radio" name="typeSearch" id="textSearch" />
-            <label for="textSearch">
+            <label class="btn-label" for="textSearch">
                 <span>Ввести адрес</span>
             </label>
         </div>
         <form class="photoForm">
-            
+            <input  type="file" accept=".jpg, .jpeg, .png" name="photoTower" class="photoTower" />
+            <label for="photoTower">
+                <span>Выберите файл</span>
+                <p>Загрузить изображение</p>
+            </label>
+            <input type="submit" class="send-btn" value="Получить информацию"/>
         </form>
     </main>
 </body>
