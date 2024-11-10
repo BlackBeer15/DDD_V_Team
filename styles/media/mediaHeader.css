@@ -39,6 +39,8 @@
 
   	.popup.open {
     	left: 0;
+		top: 80px;
+		z-index: 9999;
   	}
 
   	.popup .menu {

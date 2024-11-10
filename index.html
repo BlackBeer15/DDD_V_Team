@@ -37,7 +37,7 @@
         <div class="popup" id="popup"></div>	
     </header>
     <main>
-        <img src="images/romb.png" class="romb"/>
+        <div class="romb"></div>
         <p class="first-row">Узнайте интересную историю, год создания, имя и фамилию архитектора, краткую историческую справку о здании!</p>
         <p class="second-row">Сфотографируйте и загрузите изображение здания или введите его адрес</p>
         <div class="container-button">
@@ -51,7 +51,7 @@
             </label>
         </div>
         <form class="photoForm" method="POST">
-            <input  type="file" accept=".jpg, .jpeg, .png" name="photoTower" class="photoTower" />
+            <input  type="file"  name="photoTower" class="photoTower" />
             <label for="photoTower">
                 <img class="inp-text" src="images/load.png" />
                 <span class="inp-text">Загрузите изображение</span>
@@ -75,17 +75,7 @@
             </div>
             <input type="submit" name="send-text" class="send-btn" value="Получить информацию" />
         </form>
-        <div class="response-container">
-            <div class="for-image">
-                <img src="images/example.jpg" alt="photo">
-            </div>
-            <div class="for-text">
-                <p>Наименование: <span>dhakjshdkjash</span></p>
-                <p>Адрес: <span>dhakjshdkjash</span></p>
-                <p>Год постройки: <span>dhakjshdkjash</span></p>
-                <p>Краткая историческая справка: <span>dhak jshdkjashdha kjshdk jashdhakjshdk jashdhakjsh dkjashdhakjshdkjash dhakjshdkjashdhakj shdkjashd hakjshdkjashdhakjsh dkjashdhakjshdkjash</span></p>
-            </div>
-        </div>
+        <div class="response-container"></div>
         <a href="index.html" class="tryAgain">попробовать ещё</a>
     </main>
 </body>

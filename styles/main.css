@@ -1,17 +1,23 @@
 main {
     width: 100%;
     box-sizing: border-box;
-    padding: 30px 50px 50px 50px;
+    padding: 110px 50px 50px 50px;
     min-height: 100vh;
 }
 
 .romb {
     position: absolute;
-    right: -100px;
-    top: -30px;
+    background-image: url('../images/romb.png');
+    right: 0px;
+    top: 0px;
     width: 627px;
     height: 766px;
     z-index: -1;
+    overflow-x: hidden;
+    background-position-x: 110px;
+    background-position-y: -30px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 main > p {
@@ -143,8 +149,8 @@ label span {
 
 #photog {
     display: none;
-    height: 80%;
-    width: auto;
+    width: 60%;;
+    height: auto;
 }
 
 .addressForm {

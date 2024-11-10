@@ -1,3 +1,9 @@
+@media (max-width: 410px) {
+    .send-btn {
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 600px) {
     .tryAgain {
         font-size: 20px;
