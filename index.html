@@ -50,7 +50,7 @@
                 <span>Ввести адрес</span>
             </label>
         </div>
-        <form class="photoForm">
+        <form class="photoForm" method="POST">
             <input  type="file" accept=".jpg, .jpeg, .png" name="photoTower" class="photoTower" />
             <label for="photoTower">
                 <img class="inp-text" src="images/load.png" />
@@ -58,7 +58,7 @@
                 <p class="inp-text">Jpg, png</p>
                 <img id="photog" src="#" alt="your image" />
             </label>
-            <input type="submit" class="send-btn" value="Получить информацию" />
+            <input type="submit" name="send-photo" class="send-btn" value="Получить информацию" />
         </form>
         <form class="addressForm">
             <div>
@@ -67,13 +67,13 @@
             </div>
             <div>
                 <p>Улица</p>
-                <input type="text" name="street" id="city" />
+                <input type="text" name="street" id="street" />
             </div>
             <div>
                 <p>Дом</p>
-                <input type="text" name="home" id="city" />
+                <input type="text" name="home" id="home" />
             </div>
-            <input type="submit" class="send-btn" value="Получить информацию" />
+            <input type="submit" name="send-text" class="send-btn" value="Получить информацию" />
         </form>
     </main>
 </body>
@@ -81,4 +81,5 @@
 <script src="js/header.js"></script>
 <script src="js/preloadImage.js"></script>
 <script src="js/takeVariant.js"></script>
+<script src="js/ajax/takeInfo.js"></script>
 </html>
