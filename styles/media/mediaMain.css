@@ -1,4 +1,10 @@
 @media (max-width: 600px) {
+    .tryAgain {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
     .container-button {
         flex-direction: column;
         height: 120px;
@@ -17,6 +23,23 @@
 @media (max-width: 760px) {
     .addressForm {
         width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .response-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .for-image {
+        width: 100%;
+    }       
+    
+    .for-text {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
     }
 }
 

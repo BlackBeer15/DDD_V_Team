@@ -15,7 +15,21 @@ $('input[name="send-photo"]').click(function (e) {
 		data: sendData,
 
 		success (data) {
-            console.log(data);
+			$('.photoForm').css({'display':'none'});
+			$('.addressForm').css({'display':'none'});
+			$('.response-container').css({'display':'flex'});
+			$('.tryAgain').css({'display':'flex'});
+            $('.response-container').append(
+				'<div class="for-image">',
+                	'<img src="images/example.jpg" alt="photo">',
+            	'</div>',
+				'<div class="for-text">',
+					'<p>Наименование: <span></span></p>',
+					'<p>Адрес: <span></span></p>',
+					'<p>Год постройки: <span></span></p>',
+					'<p>Краткая историческая справка: <span><span></p>',
+            	'</div>',
+			);
         }
     })
 })
